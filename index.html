@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulators</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="panel">
+    <div class="topbar">
+      <div class="label">PARĀDS RIČIŅAM!</div>
+      <div class="leds">
+        <span class="led"></span>
+        <span class="led"></span>
+        <span class="led"></span>
+        <span class="led"></span>
+        <span class="led"></span>
+      </div>
+    </div>
+
+    <div class="screen-wrap">
+      <div class="screen-label">LCD OUTPUT</div>
+      <input type="text" id="displejs" value="0" readonly>
+    </div>
+
+    <div class="pogas">
+        <button onclick="pievienot('7')">7</button>
+        <button onclick="pievienot('8')">8</button>
+        <button onclick="pievienot('9')">9</button>
+        <button onclick="pievienot('/')" class="op">/</button>
+
+        <button onclick="pievienot('4')">4</button>
+        <button onclick="pievienot('5')">5</button>
+        <button onclick="pievienot('6')">6</button>
+        <button onclick="pievienot('*')" class="op">*</button>
+
+        <button onclick="pievienot('1')">1</button>
+        <button onclick="pievienot('2')">2</button>
+        <button onclick="pievienot('3')">3</button>
+        <button onclick="pievienot('-')" class="op">-</button>
+
+        <button onclick="pievienot('.')" class="op">.</button>
+        <button onclick="pievienot('0')" class="zero">0</button>
+        <button onclick="rezultats()" class="op">=</button>
+        <button onclick="pievienot('+')" class="op">+</button>
+
+        <button onclick="notirit()" class="danger">CLR</button>
+        <button onclick="izdzest()" class="back">←</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
